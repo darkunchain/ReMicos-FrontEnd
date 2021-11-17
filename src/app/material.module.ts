@@ -17,6 +17,7 @@ import { CountdownComponent,FormatTimePipe } from './components/countdown/countd
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 
+
 @NgModule({
 
   imports: [
@@ -44,7 +45,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     ReactiveFormsModule,
     CommonModule,
     MatBadgeModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
   ],
   declarations: [
     TablaClientesComponent,
@@ -57,7 +58,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
   ],
   providers:[
     FormBuilder,
-    NewClientService
-  ]
+    NewClientService,
+  ],
 })
 export class MaterialModule { }

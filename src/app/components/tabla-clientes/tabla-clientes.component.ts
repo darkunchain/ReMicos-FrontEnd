@@ -23,10 +23,10 @@ export class TablaClientesComponent implements OnInit {
   arrayCliente: Cliente[] = [];
   displayedColumns: string[] = ['turno', 'nombre', 'telefono', 'tiempo', 'accion'];
   dataSource: Cliente[] = [];
-  counter: number
-  idTimer: number
-  dato: Cliente
-  current: Date
+  counter: number;
+  idTimer: number;
+  dato: Cliente;
+  current: Date;
 
 
   constructor(

@@ -10,6 +10,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NewClientService } from './services/new-client.service';
 import { ModalFormComponent } from './components/modal-form/modal-form.component';
 import { ModalButtonComponent } from './components/modal-button/modal-button.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
