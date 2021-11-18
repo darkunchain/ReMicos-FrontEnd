@@ -1,0 +1,56 @@
+<hr class="p-8" />
+
+<div class="fer-elevation-z8">
+  <div class="row">
+
+    <div class="col-6">
+      <canvas
+        baseChart
+        [datasets]="this.ch1barChartData"
+        [labels]="ch1barChartLabels"
+        [options]="ch1barChartOptions"
+        [plugins]="ch1barChartPlugins"
+        [legend]="ch1barChartLegend"
+        [chartType]="ch1barChartType"
+      ></canvas>
+    </div>
+
+
+    <div class="col-6">
+      <div class="p-8">
+        <table class="tg ">
+          <thead >
+            <tr class="v-middle">
+              <th class="tg-7btt">Tiempo</th>
+              <th class="tg-7btt">Clientes</th>
+              <th class="tg-7btt">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-phtq">15 minutos</td>
+              <td class="tg-fer">{{ this.Clientes15 }}</td>
+              <td class="tg-ferr">{{ this.Clientes15T }}</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">30 minutos</td>
+              <td class="tg-fer">{{ this.Clientes30 }}</td>
+              <td class="tg-ferr">{{ this.Clientes30T }}</td>
+            </tr>
+            <tr>
+              <td class="tg-phtq">1 Hora</td>
+              <td class="tg-fer">{{ this.Clientes60 }}</td>
+              <td class="tg-ferr">{{ this.Clientes60T }}</td>
+            </tr>
+            <tr>
+              <td class="tg-0lax"></td>
+              <td class="tg-ferr">Total</td>
+              <td class="tg-ferr">{{ this.total }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</div>

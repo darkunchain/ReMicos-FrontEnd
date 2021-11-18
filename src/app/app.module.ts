@@ -10,14 +10,17 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NewClientService } from './services/new-client.service';
 import { ModalFormComponent } from './components/modal-form/modal-form.component';
 import { ModalButtonComponent } from './components/modal-button/modal-button.component';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
+import { ChartsModule } from 'ng2-charts';
+import { ChartDiasActComponent } from './components/chart-dias-act/chart-dias-act.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    ChartDiasActComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -25,6 +28,7 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
+    ChartsModule
   ],
   providers: [NewClientService],
   bootstrap: [AppComponent],

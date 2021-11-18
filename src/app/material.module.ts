@@ -11,10 +11,11 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule, FormBuilder } from '@angular/forms';
 import { ModalFormComponent } from './components/modal-form/modal-form.component';
 import { ReactiveFormsModule } from '@angular/forms'
-import {MatBadgeModule} from '@angular/material/badge';
+import { MatBadgeModule } from '@angular/material/badge';
 import { NewClientService } from './services/new-client.service';
 import { CountdownComponent,FormatTimePipe } from './components/countdown/countdown.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
 
 
 
@@ -31,7 +32,9 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     ReactiveFormsModule,
     CommonModule,
     MatBadgeModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+
+
 
   ],
   exports: [
@@ -46,6 +49,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     CommonModule,
     MatBadgeModule,
     MatProgressSpinnerModule,
+
   ],
   declarations: [
     TablaClientesComponent,
@@ -53,12 +57,15 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     ModalFormComponent,
     CountdownComponent,
     FormatTimePipe,
+
+
   ],
   entryComponents: [
   ],
   providers:[
     FormBuilder,
     NewClientService,
+
   ],
 })
 export class MaterialModule { }

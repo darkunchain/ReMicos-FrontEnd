@@ -14,7 +14,6 @@ export class SendDataService {
   constructor(private http: HttpClient) { }
 
   postClient(cliente:Cliente){
-    console.log(cliente)
     return this.http.post<any>(
       'http://app.remicos.com.co:8081/api/add',
       cliente
