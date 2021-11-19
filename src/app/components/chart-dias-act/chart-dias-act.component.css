@@ -216,6 +216,15 @@ td {
   vertical-align: middle;
 }
 
+.tdder{
+  font-size: 12px;
+  font-weight: 500;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  display: table-cell;
+  text-align: right!important;
+  vertical-align: middle;
+}
+
 
 
 
