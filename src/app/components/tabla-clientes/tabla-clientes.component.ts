@@ -82,6 +82,10 @@ export class TablaClientesComponent implements OnInit {
       console.log('Registros: ', datos)
       this.datosGrafService.datosBackShare(datos)
     })
+    this.sendDataService.getIngresos().subscribe(datos =>{
+      console.log('Registros: ', datos)
+      this.datosGrafService.datosBackShare(datos)
+    })
   }
 
   asignarTurno(){
