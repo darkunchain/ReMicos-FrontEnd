@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Chart, ChartDataSets, ChartOptions, ChartType } from 'chart.js';
 import { Label } from 'ng2-charts';
 import { DatosGrafService } from 'src/app/services/datos-graf.service';
+import { Cliente } from 'src/app/interfaces/cliente';
 
 @Component({
   selector: 'app-chart-dias-act',
@@ -14,10 +15,13 @@ export class ChartDiasActComponent implements OnInit {
   Clientes15: number = 0
   Clientes30: number = 0
   Clientes60: number = 0
-  Clientes15T: number = 0
-  Clientes30T: number = 0
-  Clientes60T: number = 0
-  total: number = 0
+  Clientes15T: number | string = 0
+  Clientes30T: number | string = 0
+  Clientes60T: number | string = 0
+  total: number | string = 0
+
+  displayedColumns: string[] = ['nombre', 'telefono', 'tiempo', 'Fecha/hora'];
+  dataSource: Cliente[] = [];
 
 
   //%%%%%%%%%%%%%%%%  Variables grafica dia de la semana mes actual  %%%%%%%%%%%%%%%%%%%%%%%%%%%//
@@ -29,7 +33,20 @@ export class ChartDiasActComponent implements OnInit {
       fontSize: 18,
       fontColor: "#111"
     },
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        },
+      }],
+      xAxes: [{
+        ticks: {
+          autoSkip: true
+        },
+      }],
+    },
   }
+
 
   public ch1barChartLabels: Label[] = ['15 minutos', '30 minutos', '1 hora',];
   public ch1barChartBackground: Label[] = [
@@ -49,16 +66,17 @@ export class ChartDiasActComponent implements OnInit {
       this.ch1barChartData = [{
         data: [datos.Cli15, datos.Cli30, datos.Cli60],
         label: 'Clientes',
-        backgroundColor: this.ch1barChartBackground
+        backgroundColor: this.ch1barChartBackground,
+        barPercentage: 0.3
       }]
       this.Clientes15 = datos.Cli15
       this.Clientes30 = datos.Cli30
       this.Clientes60 = datos.Cli60
       this.Clientes15T = datos.Cli15 * 4000
       this.Clientes30T = datos.Cli30 * 7000
-      this.Clientes60T = datos.Cli15 * 12000
+      this.Clientes60T = datos.Cli60 * 12000
       this.total = this.Clientes15T + this.Clientes30T + this.Clientes60T
-
+      this.dataSource = datos.ClientesHoy
 
 
     })
@@ -67,3 +85,5 @@ export class ChartDiasActComponent implements OnInit {
   }
 
 }
+
+
