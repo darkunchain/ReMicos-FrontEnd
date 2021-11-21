@@ -21,7 +21,7 @@ export class TablaClientesComponent implements OnInit {
 
   ClientData: Cliente;
   arrayCliente: Cliente[] = [];
-  displayedColumns: string[] = ['turno', 'nombre', 'telefono', 'tiempo', 'accion'];
+  displayedColumns: string[] = ['Ficha', 'nombre', 'telefono', 'tiempo', 'accion'];
   dataSource: Cliente[] = [];
   counter: number;
   idTimer: number;
