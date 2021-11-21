@@ -1,19 +1,9 @@
 <hr class="p-8" />
 
 <div class="row">
-  <div class="col-6">
-    <canvas
-      baseChart
-      [datasets]="this.ch1barChartData"
-      [labels]="ch1barChartLabels"
-      [options]="ch1barChartOptions"
-      [plugins]="ch1barChartPlugins"
-      [legend]="ch1barChartLegend"
-      [chartType]="ch1barChartType"
-    ></canvas>
-  </div>
 
-  <div class="col-6">
+
+  <div class="col-12">
     <div class="tcenter">
       <table class="tg">
         <thead>
@@ -55,6 +45,21 @@
     </div>
   </div>
 </div>
+
+ <div class="row">
+  <div class="col-12">
+    <canvas
+      baseChart
+      [datasets]="this.ch1barChartData"
+      [labels]="ch1barChartLabels"
+      [options]="ch1barChartOptions"
+      [plugins]="ch1barChartPlugins"
+      [legend]="ch1barChartLegend"
+      [chartType]="ch1barChartType"
+    ></canvas>
+  </div>
+
+ </div>
 
 <hr />
 <div class="row">
