@@ -12,6 +12,8 @@ import { ModalFormComponent } from './components/modal-form/modal-form.component
 import { ModalButtonComponent } from './components/modal-button/modal-button.component';
 import { ChartsModule } from 'ng2-charts';
 import { ChartDiasActComponent } from './components/chart-dias-act/chart-dias-act.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -28,7 +30,13 @@ import { ChartDiasActComponent } from './components/chart-dias-act/chart-dias-ac
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    ChartsModule
+    ChartsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [NewClientService],
   bootstrap: [AppComponent],
