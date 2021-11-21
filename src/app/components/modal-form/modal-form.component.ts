@@ -44,7 +44,7 @@ export class ModalFormComponent implements OnInit {
     this.form.value.accion = 'activo';
     this.form.value.blink = false; */
     this.dialogRef.close(this.form.value);
-    this.newClientService.nuevoCliente(this.form.value);
+    //this.newClientService.nuevoCliente(this.form.value);
     //this.dialogRef.close();
   }
 
