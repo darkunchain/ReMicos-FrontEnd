@@ -20,7 +20,7 @@ export class ChartDiasActComponent implements OnInit {
   Clientes60T: number | string = 0
   total: number | string = 0
 
-  displayedColumns: string[] = ['nombre', 'telefono', 'tiempo', 'Fecha/hora'];
+  displayedColumns: string[] = ['Ficha','nombre', 'telefono', 'tiempo', 'Fecha/hora'];
   dataSource: Cliente[] = [];
 
 
