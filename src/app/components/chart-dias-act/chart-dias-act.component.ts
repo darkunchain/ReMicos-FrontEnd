@@ -14,6 +14,8 @@ export class ChartDiasActComponent implements OnInit {
   mydata: [] = []
   Clientes15: number = 0
   Clientes30: number = 0
+  Clientes15p: number = 0
+  Clientes30p: number = 0
   Clientes60: number = 0
   Clientes15T: number | string = 0
   Clientes30T: number | string = 0
@@ -64,16 +66,18 @@ export class ChartDiasActComponent implements OnInit {
 
     this.datosGrafService.getDatosIngresos$().subscribe(datos => {
       this.ch1barChartData = [{
-        data: [datos.Cli15, datos.Cli30, datos.Cli60],
+        data: [datos.Cli15 + datos.Cli15p, datos.Cli30 + datos.Cli30p, datos.Cli60],
         label: 'Clientes',
         backgroundColor: this.ch1barChartBackground,
         barPercentage: 0.3
       }]
       this.Clientes15 = datos.Cli15
       this.Clientes30 = datos.Cli30
+      this.Clientes15p = datos.Cli15p
+      this.Clientes30p = datos.Cli30p
       this.Clientes60 = datos.Cli60
-      this.Clientes15T = datos.Cli15 * 4000
-      this.Clientes30T = datos.Cli30 * 7000
+      this.Clientes15T = (datos.Cli15 * 4000) + (datos.Cli15p * 3000)
+      this.Clientes30T = (datos.Cli30 * 7000) + + (datos.Cli30p * 5000)
       this.Clientes60T = datos.Cli60 * 12000
       this.total = this.Clientes15T + this.Clientes30T + this.Clientes60T
       this.dataSource = datos.ClientesHoy
