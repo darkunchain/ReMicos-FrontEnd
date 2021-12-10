@@ -73,7 +73,7 @@ export class ModalFormComponent implements OnInit {
   }
 
   min15p() {
-    this.form.value.tiempo = 901;
+    this.form.value.tiempo = 960;
     this.form.value.accion = 'activo';
     this.form.value.blink = false;
     this.dialogRef.close(this.form.value);
@@ -81,7 +81,7 @@ export class ModalFormComponent implements OnInit {
   }
 
   min30p() {
-    this.form.value.tiempo = 1801;
+    this.form.value.tiempo = 1860;
     this.form.value.accion = 'activo';
     this.form.value.blink = false;
     this.dialogRef.close(this.form.value);
