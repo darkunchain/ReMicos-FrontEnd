@@ -3,6 +3,7 @@ export interface Cliente {
   nombre: string;
   telefono?: number;
   tiempo: number;
+  ingresos: number,
   accion: string;
   blink: Boolean;
   createdAt?: Date | String;
