@@ -40,7 +40,13 @@ export class ModalFormComponent implements OnInit {
   }
 
   close() {
+    this.form.value.tiempo = 20;//900
+    this.form.value.ingresos = 1000;
+    this.form.value.accion = 'activo';
+    this.form.value.blink = false;
     this.dialogRef.close(this.form.value);
+    console.log('Prueba_this.form.value:',this.form.value)
+    this.newClientService.nuevoCliente(this.form.value);
   }
 
   min15() {
@@ -49,6 +55,7 @@ export class ModalFormComponent implements OnInit {
     this.form.value.accion = 'activo';
     this.form.value.blink = false;
     this.dialogRef.close(this.form.value);
+    console.log('15min_this.form.value:',this.form.value)
     this.newClientService.nuevoCliente(this.form.value);
   }
 
@@ -58,6 +65,7 @@ export class ModalFormComponent implements OnInit {
     this.form.value.accion = 'activo';
     this.form.value.blink = false;
     this.dialogRef.close(this.form.value);
+    console.log('30min_this.form.value:',this.form.value)
     this.newClientService.nuevoCliente(this.form.value);
   }
 
@@ -67,6 +75,7 @@ export class ModalFormComponent implements OnInit {
     this.form.value.accion = 'activo';
     this.form.value.blink = false;
     this.dialogRef.close(this.form.value);
+    console.log('60min_this.form.value:',this.form.value)
     this.newClientService.nuevoCliente(this.form.value);
   }
 
@@ -76,6 +85,7 @@ export class ModalFormComponent implements OnInit {
     this.form.value.accion = 'activo';
     this.form.value.blink = false;
     this.dialogRef.close(this.form.value);
+    console.log('15minP_this.form.value:',this.form.value)
     this.newClientService.nuevoCliente(this.form.value);
   }
 
@@ -85,6 +95,7 @@ export class ModalFormComponent implements OnInit {
     this.form.value.accion = 'activo';
     this.form.value.blink = false;
     this.dialogRef.close(this.form.value);
+    console.log('30minP_this.form.value:',this.form.value)
     this.newClientService.nuevoCliente(this.form.value);
   }
 
