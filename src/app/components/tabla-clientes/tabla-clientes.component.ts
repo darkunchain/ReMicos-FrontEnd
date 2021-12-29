@@ -71,6 +71,7 @@ export class TablaClientesComponent implements OnInit {
     this.dato.blink = false
     this.dato.createdAt = new Date().toLocaleString('es-CO')
     this.dato.isoDate = new Date()
+    console.log('this.dato_send:',this.dato)
     this.sendDataService.postClient(this.dato).subscribe(data => {
 
     },error => {

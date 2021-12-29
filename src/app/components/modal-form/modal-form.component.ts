@@ -40,13 +40,9 @@ export class ModalFormComponent implements OnInit {
   }
 
   close() {
-    this.form.value.tiempo = 20;//900
-    this.form.value.ingresos = 1000;
-    this.form.value.accion = 'activo';
-    this.form.value.blink = false;
+
     this.dialogRef.close(this.form.value);
-    console.log('Prueba_this.form.value:',this.form.value)
-    this.newClientService.nuevoCliente(this.form.value);
+
   }
 
   min15() {
