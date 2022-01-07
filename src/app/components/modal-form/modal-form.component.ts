@@ -67,7 +67,7 @@ export class ModalFormComponent implements OnInit {
 
   min60() {
     this.form.value.tiempo = 3600;//3600
-    this.form.value.ingresos = 4000;
+    this.form.value.ingresos = 12000;
     this.form.value.accion = 'activo';
     this.form.value.blink = false;
     this.dialogRef.close(this.form.value);
