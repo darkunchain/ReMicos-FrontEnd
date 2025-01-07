@@ -46,7 +46,7 @@ export class ModalFormComponent implements OnInit {
   }
 
   min15() {
-    this.form.value.tiempo = 60;//900
+    this.form.value.tiempo = 900;//900
     this.form.value.ingresos = 6000;
     this.form.value.accion = 'activo';
     this.form.value.blink = false;
@@ -56,7 +56,7 @@ export class ModalFormComponent implements OnInit {
   }
 
   min30() {
-    this.form.value.tiempo = 61;//1800
+    this.form.value.tiempo = 1800;//1800
     this.form.value.ingresos = 9000;
     this.form.value.accion = 'activo';
     this.form.value.blink = false;
@@ -66,7 +66,7 @@ export class ModalFormComponent implements OnInit {
   }
 
   min60() {
-    this.form.value.tiempo = 62;//3600
+    this.form.value.tiempo = 3600;//3600
     this.form.value.ingresos = 14000;
     this.form.value.accion = 'activo';
     this.form.value.blink = false;
@@ -76,7 +76,7 @@ export class ModalFormComponent implements OnInit {
   }
 
   min15p() {
-    this.form.value.tiempo = 63;//960
+    this.form.value.tiempo = 960;//960
     this.form.value.ingresos = 3000;
     this.form.value.accion = 'activo';
     this.form.value.blink = false;
@@ -86,7 +86,7 @@ export class ModalFormComponent implements OnInit {
   }
 
   min30p() {
-    this.form.value.tiempo = 64;//1860
+    this.form.value.tiempo = 1860;//1860
     this.form.value.ingresos = 5000;
     this.form.value.accion = 'activo';
     this.form.value.blink = false;
