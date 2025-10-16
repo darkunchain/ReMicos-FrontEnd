@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1736371464835,
+  "timestamp": 1760640211661,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.8b97b35fe4d3a280fee8.js",
+        "/main.4e7612f67c73f736.js",
         "/manifest.webmanifest",
-        "/polyfills.1a76cecb1107518e2d24.js",
-        "/runtime.a8c07e401fefeeaa5532.js",
-        "/styles.aed625f13435cbb527ed.css"
+        "/polyfills.f5fb56070f92b396.js",
+        "/runtime.0b16e3fbf8255d9b.js",
+        "/styles.f5d630ac06784ae8.css"
       ],
       "patterns": []
     },
@@ -54,16 +54,16 @@
     "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/assets/img/logo-blanco.svg": "cdd1757965ee58638c70aa518328a25191db19c8",
-    "/assets/img/logo-negro.svg": "9d8b847af78f221f70bd715701d1e282c5bd4fe7",
-    "/assets/img/logo.svg": "a3d75e73bc9e2b3ccee5b75588b24ee22ad7341e",
+    "/assets/img/logo-blanco.svg": "2418e65e7f3423db1fb9bfda8263e67b830102ce",
+    "/assets/img/logo-negro.svg": "b380ee20521c323d87dd4ee28d116aa628f1f3b1",
+    "/assets/img/logo.svg": "b153dc46f0166b191d00bc20fdcbe2f271f64a3a",
     "/favicon.ico": "e3810778bd3b0c47df3bc03a1d52e82e0aef5c50",
-    "/index.html": "a87213e74d6aac31f92b6aaa8775687ac0f01292",
-    "/main.8b97b35fe4d3a280fee8.js": "2e4115f3ba2760446cebe91f8e711c4cfd28393d",
-    "/manifest.webmanifest": "ee70a6d7c3fb8a92d65b5f9f16a190dc9aad7af7",
-    "/polyfills.1a76cecb1107518e2d24.js": "2d5d095d16aff139e0f1e2931808c0711d0f3170",
-    "/runtime.a8c07e401fefeeaa5532.js": "4dcd681754523dfd8ec86a164833fc55a1c01321",
-    "/styles.aed625f13435cbb527ed.css": "3cc01d37577e36353d9519185a04250faf63c5fe"
+    "/index.html": "feefd9647750e6913a411db877c8af272cd2cc8e",
+    "/main.4e7612f67c73f736.js": "a14ac6ad6026a34bfe63e54b658624bc952c9b57",
+    "/manifest.webmanifest": "ed707ee23d9e5ab6df8795d14c57c74a0a82da30",
+    "/polyfills.f5fb56070f92b396.js": "72ff3e9f6b9ae3ca153bf9d4306f89e9573b0ab5",
+    "/runtime.0b16e3fbf8255d9b.js": "8ecaf34f44cf400f7761a2c1b7b3c282a00b7fb2",
+    "/styles.f5d630ac06784ae8.css": "cc153e4af5e81600915b44e1968c667823ad905b"
   },
   "navigationUrls": [
     {
