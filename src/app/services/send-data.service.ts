@@ -15,18 +15,18 @@ export class SendDataService {
 
   postClient(cliente:Cliente){
     return this.http.post<any>(
-      'http://app.remicos.com.co:8081/api/add',
+      '/api/add',
       cliente
       )
   }
 
   getRegistros():Observable<Cliente[]> {
-    return this.http.get<Cliente[]>('http://app.remicos.com.co:8081/api/registros')
+    return this.http.get<Cliente[]>('/api/registros')
 
   }
 
   getIngresos():Observable<Cliente[]> {
-    return this.http.get<Cliente[]>('http://app.remicos.com.co:8081/api/ingresos')
+    return this.http.get<Cliente[]>('/api/ingresos')
 
   }
 
