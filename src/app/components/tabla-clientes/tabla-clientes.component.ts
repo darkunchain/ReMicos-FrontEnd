@@ -38,8 +38,8 @@ export class TablaClientesComponent implements OnInit {
 
   ngOnInit() {
 
-    this.sendDataService.getRegistros().subscribe(datos =>{
-      //console.log('Registros: ', datos)
+    this.sendDataService.getRegistrosDays(7).subscribe(datos =>{
+      console.log('Registros: ', datos)
       this.datosGrafService.datosBackShare(datos)
     })
 

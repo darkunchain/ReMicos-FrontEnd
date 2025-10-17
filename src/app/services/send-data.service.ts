@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Cliente } from '../interfaces/cliente';
 import { Observable } from 'rxjs';
 
@@ -24,6 +24,14 @@ export class SendDataService {
     return this.http.get<Cliente[]>('/api/registros')
 
   }
+
+  getRegistrosDays(days?: number): Observable<Cliente[]> {
+    const opts = days != null
+      ? { params: new HttpParams().set('days', String(days)) }
+      : undefined;
+    return this.http.get<Cliente[]>('/api/registros', opts);
+  }
+
 
   getIngresos():Observable<Cliente[]> {
     return this.http.get<Cliente[]>('/api/ingresos')
