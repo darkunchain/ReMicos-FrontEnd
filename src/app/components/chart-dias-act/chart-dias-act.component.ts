@@ -24,7 +24,7 @@ export class ChartDiasActComponent implements OnInit {
 
   displayedColumns: string[] = ['Ficha','nombre', 'telefono', 'tiempo', 'Fecha/hora'];
   dataSource: Cliente[] = [];
-  
+
 
 
   //%%%%%%%%%%%%%%%%  Variables grafica dia de la semana mes actual  %%%%%%%%%%%%%%%%%%%%%%%%%%%//
@@ -80,10 +80,10 @@ export class ChartDiasActComponent implements OnInit {
       this.Clientes15p = datos.Cli15p
       this.Clientes30p = datos.Cli30p
       this.Clientes60 = datos.Cli60
-      this.Clientes15T = (datos.Cli15 * 6000) + (datos.Cli15p * 3000)
-      this.Clientes30T = (datos.Cli30 * 9000) + (datos.Cli30p * 5000)
+      this.Clientes15T = (datos.Cli15 * 7000) + (datos.Cli15p * 3000)
+      this.Clientes30T = (datos.Cli30 * 10000) + (datos.Cli30p * 5000)
       //console.log(this.Clientes15T,this.Clientes30T)
-      this.Clientes60T = datos.Cli60 * 14000
+      this.Clientes60T = datos.Cli60 * 15000
       this.total = this.Clientes15T + this.Clientes30T + this.Clientes60T
       this.dataSource = datos.ClientesHoy
       this.isDataLoaded = true;
